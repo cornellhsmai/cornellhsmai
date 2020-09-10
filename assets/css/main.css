@@ -2532,14 +2532,37 @@ input, select, textarea {
 					position: relative;
 					border-top: solid 1px #dfdfdf;
 					margin: 0;
-					padding: 40px 0 0 0;
+					margin: 50px 0 0 0;
+					z-index: -1;
 				}
 
 					#intro section.first {
 						border-top: 0;
 						padding-top: 0;
-						
+						width: 33.33vw;
+						height: auto;
+						position: relative;
+						display: inline-block;
+						vertical-align: middle;
+						border-radius: 10px;
+						z-index: 3;
+						-webkit-transform: translateZ(0);
+						transform: translateZ(0);
+						box-shadow: 3px 5px 20px rgba(255, 249, 249, 0.25);
+						-webkit-backface-visibility: hidden;
+						backface-visibility: hidden;
+						-moz-osx-font-smoothing: grayscale;
+						-webkit-transition-duration: 0.3s;
+						transition-duration: 0.3s;
+						-webkit-transition-property: box-shadow, transform;
+						transition-property: box-shadow, transform;
 					}
+
+					#intro section.first:hover, #intro section.first:focus, #intro section.first:active {
+						box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.2);
+						-webkit-transform: scale(1.05);
+						transform: scale(1.05);
+					  }
 					/*#intro section.first img{
 						width: 200px;
 						max-width: 100%;
